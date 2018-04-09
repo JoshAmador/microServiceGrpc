@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package com.example.server;
+
+message HelloRequest {
+
+	string nombre = 1;
+	repeated string deportes = 2;
+	repeated string comida = 3;
+	map<string, string> preferenciasPersona = 4;
+}
+
+message HelloResponse{
+	string greeting = 1;
+}
+
+service GreetingService {
+	rpc greeting(HelloRequest) returns (HelloResponse);
+}
