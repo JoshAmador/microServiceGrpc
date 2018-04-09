@@ -12,8 +12,32 @@ public class MyGrpcServer {
 				.addService(new GreetingServiceImpl())
 				.build();
 		server.start();
-		server.awaitTermination();
 		System.out.println("Servidor iniciado en puerto 9080");
+		server.awaitTermination();
+	}
+	
+	public void startServer() {
+		
+		Server server = ServerBuilder.forPort(9080)
+				.addService(new GreetingServiceImpl())
+				.build();
+		
+		try {
+			server.start();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Servidor iniciado en puerto 9080");
+		
+	}
+	
+	public void stopServer() {
+		Server server = ServerBuilder.forPort(9080)
+				.addService(new GreetingServiceImpl())
+				.build();
+		server.shutdown();
+		System.out.println("El servidor ha terminado su sesion");
 	}
 	
 }

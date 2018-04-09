@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteGrpc]">
+  <parameter name="deporte" value="Ciclismo"/>
+  <parameter name="nombre" value="Joshua"/>
+  <listeners>
+    <listener class-name="com.example.grpc.utils.myListener"/>
+  </listeners>
+  <test name="ToolsQA(failed)">
+    <parameter name="deporte" value="Ciclismo"/>
+    <parameter name="nombre" value="Joshua"/>
+    <classes>
+      <class name="TaeAutomation.microServiceGrpc.servicioGrpcTest">
+        <methods>
+          <include name="startingSuite"/>
+          <include name="closingSuite"/>
+          <include name="nombreValidationTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TaeAutomation.microServiceGrpc.servicioGrpcTest -->
+    </classes>
+  </test> <!-- ToolsQA(failed) -->
+</suite> <!-- Failed suite [SuiteGrpc] -->

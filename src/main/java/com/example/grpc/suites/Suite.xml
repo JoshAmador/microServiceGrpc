@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SuiteGrpc">
+	<listeners>
+		<listener class-name="com.example.grpc.utils.myListener"></listener>
+	</listeners>
+
+	<test name="ToolsQA">
+		<parameter name="nombre" value="Joshua"></parameter>
+		<parameter name="deporte" value="Ciclismo"></parameter>
+		<classes>
+			<class name="TaeAutomation.microServiceGrpc.servicioGrpcTest"></class>
+		</classes>
+	</test>
+</suite>

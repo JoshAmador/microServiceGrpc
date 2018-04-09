@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteGrpc" duration-ms="379" started-at="2018-04-09T23:03:31Z" finished-at="2018-04-09T23:03:31Z">
+    <groups>
+    </groups>
+    <test name="ToolsQA" duration-ms="379" started-at="2018-04-09T23:03:31Z" finished-at="2018-04-09T23:03:31Z">
+      <class name="TaeAutomation.microServiceGrpc.servicioGrpcTest">
+        <test-method status="PASS" signature="startingSuite()[pri:0, instance:TaeAutomation.microServiceGrpc.servicioGrpcTest@3bfdc050]" name="startingSuite" is-config="true" duration-ms="545" started-at="2018-04-09T18:03:30Z" finished-at="2018-04-09T18:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startingSuite -->
+        <test-method status="PASS" signature="nombreValidationTest(java.lang.String, java.lang.String)[pri:0, instance:TaeAutomation.microServiceGrpc.servicioGrpcTest@3bfdc050]" name="nombreValidationTest" duration-ms="365" started-at="2018-04-09T18:03:31Z" finished-at="2018-04-09T18:03:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joshua]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ciclismo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nombreValidationTest -->
+        <test-method status="PASS" signature="closingSuite()[pri:0, instance:TaeAutomation.microServiceGrpc.servicioGrpcTest@3bfdc050]" name="closingSuite" is-config="true" duration-ms="0" started-at="2018-04-09T18:03:31Z" finished-at="2018-04-09T18:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingSuite -->
+      </class> <!-- TaeAutomation.microServiceGrpc.servicioGrpcTest -->
+    </test> <!-- ToolsQA -->
+  </suite> <!-- SuiteGrpc -->
+</testng-results>
